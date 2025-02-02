@@ -307,7 +307,7 @@ function ReferralWidget({ isManager }) {
           </div>
         ) : (
           <CopyField
-            disabled={true}
+            disable={false}
             label={isManager ? "Manager link" : "Referral link"}
             value={refUrl}
             size="small"
