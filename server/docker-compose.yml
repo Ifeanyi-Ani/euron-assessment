@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - MONGODB_CONNECTION_STRING=mongodb+srv://ifeanyiani155:MPHzycLeoNKSlu19@cluster0.vue8q.mongodb.net/euron?retryWrites=true&w=majority&appName=Cluster0
