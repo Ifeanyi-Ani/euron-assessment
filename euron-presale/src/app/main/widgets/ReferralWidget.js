@@ -281,7 +281,7 @@ function ReferralWidget({ isManager }) {
           label={isManager ? "Manager Code" : "Referral Code"}
           size="small"
           value={refCode}
-          disabled={!isConnected || !isBuyer || isCreatedRefCode}
+          disable={!isConnected || !isBuyer || isCreatedRefCode}
           onChange={(e) => handleRefCode(e)}
         />
 
@@ -463,7 +463,7 @@ function ReferralWidget({ isManager }) {
         <LoadingButton
           variant="contained"
           color="primary"
-          disabled={!isConnected || !isBuyer || isCreatedRefCode}
+          disable={!isConnected || !isBuyer || isCreatedRefCode}
           loading={loading}
           loadingPosition="end"
           onClick={handleCreateRefCode}
